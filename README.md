@@ -53,8 +53,10 @@ Content-Type: application/json
 {
 "username":"iron@dominio.es", "password":"man$Super2"
 }
+```
+Ha de retornar:
 
-
+```
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
