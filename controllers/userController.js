@@ -282,10 +282,6 @@ const getFullUser = (req, res, next) => {
         if (result === undefined) {
             next(HttpError(400, { message: messagesapp.user_error_username }));
         } else {
-            const _notices = userModel.getNotices(result);
-            if (_notices != undefined){
-                result.notices = _notices.notices;
-            }
             res.status(201).json(result);
         }
     } catch (error) {
