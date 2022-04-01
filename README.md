@@ -53,10 +53,8 @@ Content-Type: application/json
 {
 "username":"iron@dominio.es", "password":"man$Super2"
 }
-```
-Ha de retornar:
 
-```
+
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
@@ -115,7 +113,7 @@ Connection: close
   ]
 }
 ```
-##  Codificar una API nova que donat un usuari i un objecta **dades de perfil** d'un usuari, aquestes s'afegeixen a l'usuari com a reposta. Ha d'estar registrat (2 punts)
+##  Codificar una API nova que donat un usuari i un objecta **dades de perfil** d'un usuari, aquestes s'afegeixen com un atribut nou a l'usuari, s'han de veure com a reposta de la crida. Ha d'estar registrat (2 punts)
 
 Codificar una nova API que donat un missatge HTTP POST users/profiledata amb un usuari i un objecta **dades de perfil** quan l'acció d'afegir dades de perfil a l'usuari sigui OK llavors mostri un missatge **"Data Profile created successfully"** conjuntament amb els atributs de l'usuari.
 
