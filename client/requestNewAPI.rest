@@ -1,0 +1,141 @@
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+"username":"aquaman@dominio.es", "password":"man$Super3"
+}
+
+
+####
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+"username":"aquaman@dominio.es", "password":"man$Super3"
+}
+
+
+####
+GET http://localhost:3000/users/aquaman@dominio.es
+
+
+///-------------add grants-------------------
+####
+POST http://localhost:3000/users/grants
+Content-Type: application/json
+
+{
+"username":"aquaman@dominio.es", "grants":["create_database","create_role","create_table","create_view"]
+}
+
+
+///-------------delete grants-------------------
+###
+DELETE http://localhost:3000/users/grants
+Content-Type: application/json
+
+{
+"username":"aquaman@dominio.es", "grants":["create_database"]
+}
+
+
+///-------------update grants-------------------
+####
+PUT http://localhost:3000/users/grants
+Content-Type: application/json
+
+{
+"username":"aquaman@dominio.es", "grants":["create_user","alter_table"]
+}
+
+
+///-------------new password-------------------
+####
+PUT http://localhost:3000/users/newpass
+Content-Type: application/json
+
+{
+"username":"aquaman@dominio.es", "password":"man$Super3", "newpassword":"man$Super2"
+}
+
+
+///-------------deactive user-------------------
+####
+DELETE http://localhost:3000/users/user
+Content-Type: application/json
+
+{
+"username":"aquaman@dominio.es"
+}
+
+
+///-------------active user-------------------
+####
+PUT http://localhost:3000/users/user
+Content-Type: application/json
+
+{
+"username":"aquaman@dominio.es"
+}
+
+
+///-------------add profile data-------------------
+####
+POST http://localhost:3000/users/profiledata
+Content-Type: application/json
+
+{
+"username":"aquaman@dominio.es", "profiledata":{
+    "city":"Barcelona",
+    "region":"Barcelona",
+    "zip":"08032"
+    }
+}
+
+
+///-------------getFullUser -------------------
+###
+POST http://localhost:3000/users/user
+Content-Type: application/json
+
+{
+"username":"aquaman@dominio.es"
+}
+
+
+///-------------user with 1 notice-------------------
+####
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+"username":"spyder@dominio.es", "password":"man$Super1"
+}
+
+
+####
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+"username":"spyder@dominio.es", "password":"man$Super1"
+}
+
+
+///-------------user with 0 notice-------------------
+####
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+"username":"iron@dominio.es", "password":"man$Super2"
+}
+
+
+####
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+"username":"iron@dominio.es", "password":"man$Super2"
+}
