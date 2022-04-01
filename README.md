@@ -113,7 +113,7 @@ Connection: close
   ]
 }
 ```
-##  Codificar una API nova que donat un usuari i un objecta **dades de perfil** d'un usuari, aquestes s'afegeixen a l'usuari. Ha d'estar registrat (2 punts)
+##  Codificar una API nova que donat un usuari i un objecta **dades de perfil** d'un usuari, aquestes s'afegeixen a l'usuari com a reposta. Ha d'estar registrat (2 punts)
 
 Codificar una nova API que donat un missatge HTTP POST users/profiledata amb un usuari i un objecta **dades de perfil** quan l'acció d'afegir dades de perfil a l'usuari sigui OK llavors mostri un missatge **"Data Profile created successfully"** conjuntament amb els atributs de l'usuari.
 
