@@ -42,7 +42,7 @@ Per enviar l'exercici feu servir el classroom:
 Criteris de Acceptació:
 
 1. **IMPORTANT!!** no pots alterar l'objecte origen, els atributs has d'existir no els pots eliminar.
-2. **IMPORTANT!!** has d'afegir un missatge **"User logged successfully"** del fitxer de **messagesusr.js**. Aquest missatge no pertany a l'objecte user, només l'has d'afegir a la resposta.
+2. **IMPORTANT!!** has d'afegir un missatge **"User logged successfully"** del fitxer de **messagesusr.js**. Aquest atribut message no pertany a l'objecte user, només l'has d'afegir a la resposta.
 3. Ha de mostar con a resultat, mínim: username, timestamp i grants.
 
 ```
@@ -119,7 +119,7 @@ Codificar una nova API que donat un missatge HTTP POST users/profiledata amb un 
 
 Criteris de Acceptació:
 
-1. **IMPORTANT!!** has d'afegir un missatge **"Data Profile created successfully"** del fitxer de **messagesusr.js**. Aquest missatge no pertany a l'objecte user, només l'has d'afegir a la resposta.
+1. **IMPORTANT!!** has d'afegir un missatge **"Data Profile created successfully"** del fitxer de **messagesusr.js**. Aquest atribut message no pertany a l'objecte user, només l'has d'afegir a la resposta.
 2.  Ha de mostar com a resultat els atributs públics + el nou atribut **profiledata**  amb les dades del perfil de l'usuari. 
 
 Per exemple: 
