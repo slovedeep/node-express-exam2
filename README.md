@@ -1,6 +1,6 @@
 ## Introducció
 
-En aquest exercici anem afegir el paquet framework express.
+En aquest exercici anem afegir noves funcionalitats utilitzant express.
 
 <br>
 
@@ -37,13 +37,13 @@ Per enviar l'exercici feu servir el classroom:
 
  Codificar una solució que donat una crida a qualsevol API ja desenvolupada que quan ha de mostra el resultat llavors només mostri atributs públics i no pas els privats, com el password i/o si un usuari està actiu o no. Per tant, has d'aconseguir ocultar-los en la resposta.
 
-**NOTA!!** Són també públics **grants** si l'usuari té privilegis assignats, **profiledata** si impleimplemntes la US3,  i **notices** si impleimplemntes la US4
+**NOTA!!** Són també públics **grants** si l'usuari té privilegis assignats, **profiledata** si impleimplemntes la US3,  i **notices** si implementes la US4
 
-Criteris de Acceptació:
+Criteris d'Acceptació:
 
-1. **IMPORTANT!!** no pots alterar l'objecte origen, els atributs has d'existir no els pots eliminar.
+1. **IMPORTANT!!** no pots alterar l'objecte origen, els atributs han d'existir no els pots eliminar.
 2. **IMPORTANT!!** has d'afegir un missatge **"User logged successfully"** del fitxer de **messagesusr.js**. Aquest atribut message no pertany a l'objecte user, només l'has d'afegir a la resposta.
-3. Ha de mostar con a resultat, mínim: username, timestamp i grants.
+3. Ha de retornar com a resultat, mínim: username, timestamp i grants.
 
 ```
 
@@ -75,9 +75,9 @@ Connection: close
 
 Codificar una nova API que donat un missatge HTTP POST users/user que quan ha de mostrar el resultat llavors mostri TOTS els atributs públics i privats.
 
-Criteris de Acceptació:
+Criteris d'Acceptació:
 
-1. Ha de mostar com a resultat, mínim: username, password, timestamp, active i grants.
+1. Ha de retornar com a resultat, mínim: username, password, timestamp, active i grants.
 
 
 ```
@@ -117,10 +117,10 @@ Connection: close
 
 Codificar una nova API que donat un missatge HTTP POST users/profiledata amb un usuari i un objecta **dades de perfil** quan l'acció d'afegir dades de perfil a l'usuari sigui OK llavors mostri un missatge **"Data Profile created successfully"** conjuntament amb els atributs de l'usuari.
 
-Criteris de Acceptació:
+Criteris d'Acceptació:
 
 1. **IMPORTANT!!** has d'afegir un missatge **"Data Profile created successfully"** del fitxer de **messagesusr.js**. Aquest atribut message no pertany a l'objecte user, només l'has d'afegir a la resposta.
-2.  Ha de mostar com a resultat els atributs públics + el nou atribut **profiledata**  amb les dades del perfil de l'usuari. 
+2.  Ha de retornar com a resultat els atributs públics + el nou atribut **profiledata**  amb les dades del perfil de l'usuari. 
 
 Per exemple: 
 
@@ -164,13 +164,13 @@ Connection: close
 
 
 
-## Codificar una solució per mostrar el avisos que té un usuari quan inicia sessió.( **login**). (5 punts)
+## Codificar una solució per mostrar els avisos que té un usuari quan inicia sessió.( **login**). (5 punts)
 
-Codificar una slució que donat un login d'usuari quan aquest usuari tingui avisos **notices.js** llavors mostri el avisos conjuntament amb els atributs de l'usuari.
+Codificar una solució que donat un login d'usuari quan aquest usuari tingui avisos **notices.js** llavors mostri els avisos conjuntament amb els atributs de l'usuari.
 
-Criteris de Acceptació:
+Criteris d'Acceptació:
 
-1.  Ha de mostar com a resultat els atributs públics + el nou atribut **notices**  amb els avisos de l'usuari.
+1.  Ha de retornar com a resultat els atributs públics + el nou atribut **notices**  amb els avisos de l'usuari.
 
 Per exemple: 
 
